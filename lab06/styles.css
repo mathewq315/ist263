@@ -1,0 +1,9 @@
+body {font-family: Verdana;}
+p, ul, td, caption, th {color : darkolivegreen;}
+h1 {color: slategray;
+font-size: 40 px;}
+h2 {color: sienna;}
+.evenrow {background-color: orange;}
+/* h1 {font-size: 40 px;} */
+h2 {font-size: 2 px;}
+table, th, td {border: 1px solid black;}
