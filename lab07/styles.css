@@ -1,2 +1,8 @@
 body {background-color: #183a37;}
-h1, h2, p, ul {color: #efd6ac;}
+h1, h2, p, ul, tr, th, td, table, caption {color: #efd6ac;}
+a {color: #04151f;}
+nav {background-color: #22333b;}
+nav a {color: #c44900;}
+nav a:hover {background-color: #fffaf0;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px}
