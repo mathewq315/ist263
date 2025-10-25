@@ -1,0 +1,12 @@
+body {background-color: #183a37;}
+h1, h2, p, ul, caption {color: #efd6ac;}
+tr, th, td, table {color: #efd6ac;}
+table, th, td {border: 1px solid;}
+a {color: #04151f;}
+nav {background-color: #22333b;}
+nav a {color: #c44900;}
+nav a:hover {background-color: #fffaf0;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px}
+.quote {float: right; margin-right: 10px; color: #efd6ac;}
+.
