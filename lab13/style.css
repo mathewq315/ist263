@@ -10,6 +10,7 @@ nav {padding: 10px;}
 nav {margin-bottom: 30px}
 span {color: white;}
 .quote {float: right; margin-right: 10px; color: #ffff;}
+
 .row1, .row2 {
   display: flex;
   justify-content: space-between;
