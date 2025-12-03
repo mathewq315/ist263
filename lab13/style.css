@@ -8,6 +8,7 @@ nav a {color: #ffff;}
 nav a:hover {background-color: #fffaf0;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px}
+span {color: white;}
 .quote {float: right; margin-right: 10px; color: #efd6ac;}
 .row1, .row2 {
   display: flex;
