@@ -1,6 +1,6 @@
 body {background-color: #183a37;}
-h1, h2, p, ul, caption {color: #efd6ac;}
-tr, th, td, table {color: #efd6ac;}
+h1, h2, p, ul, caption {color: #ffff;}
+tr, th, td, table {color: #ffff;}
 table, th, td {border: 1px solid;}
 a {color: #04151f;}
 nav {background-color: #22333b;}
@@ -9,7 +9,7 @@ nav a:hover {background-color: #fffaf0;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px}
 span {color: white;}
-.quote {float: right; margin-right: 10px; color: #efd6ac;}
+.quote {float: right; margin-right: 10px; color: #ffff;}
 .row1, .row2 {
   display: flex;
   justify-content: space-between;
