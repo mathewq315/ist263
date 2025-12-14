@@ -173,8 +173,8 @@ footer{
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: 24px auto;   
-  padding-bottom: 56.25%; 
+  margin: 32px auto;       
+  padding-bottom: 56.25%;  
   height: 0;
 }
 
