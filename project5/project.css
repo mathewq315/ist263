@@ -145,12 +145,20 @@ h1, h2, h3, h4 {
 .homecontent{
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;          /* allows stacking on smaller screens */
+  flex-wrap: wrap;     
   align-items: stretch;
 }
 
 .aboutsection,
 .techsection{
-  flex: 1 1 320px;          /* two columns on desktop, stack when narrow */
+  flex: 1 1 320px;      
+}
+
+section{
+  padding-bottom: 40px;
+}
+
+.homecontent{
+  margin-bottom: 40px;
 }
 
