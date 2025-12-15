@@ -15,6 +15,7 @@ body {
 nav {
     background-color: #333435;
     padding: 20px;
+    text-align: center;
 }
 
 nav a {
@@ -22,6 +23,11 @@ nav a {
     padding: 10px 30px;
     margin: 0 10px;
     display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -36,21 +42,29 @@ header img.responsiveimg {
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.22);
 }
 
 section, main {
     max-width: 1200px;
     margin: 20px auto 0;
     padding: 40px 20px;
-    background-color: #b7c2b5;
-    border-radius: 8px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+body:not(.projectspage):not(.personalpage) section {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
 }
 
 h1 {
     font-size: 2.5em;
     color: #333435;
-    margin-bottom: 30px;
+    margin: 40px 0 30px;
     text-align: center;
 }
 
@@ -58,6 +72,10 @@ h2 {
     font-size: 1.8em;
     color: #333435;
     margin: 40px 0 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 p {
@@ -71,13 +89,24 @@ img.responsiveimg {
     height: auto;
     display: block;
     margin: 30px auto;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
 .homecontent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 40px;
+}
+
+.aboutsection, .techsection {
+    flex: 1 1 320px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
 }
 
 .aboutsection h2, .techsection h2 {
@@ -90,21 +119,17 @@ img.responsiveimg {
     text-align: justify;
 }
 
-.projectspage section {
-    padding: 40px 60px;
-}
-
-.projectspage h2, .projectspage p {
-        text-align: center;
-}
-
-.personalpage h2, .personalpage p {
-        text-align: center;
-}
-
-.personalpage p {
+.content-box {
+    background-color: #ffffff;
     max-width: 900px;
-    margin: 20px auto 30px; 
+    margin: 32px auto;
+    padding: 24px 28px;
+    border-radius: 16px;
+}
+
+.projectspage h2,
+.projectspage p {
+    text-align: center;
 }
 
 .projectspage p {
@@ -112,18 +137,57 @@ img.responsiveimg {
     margin: 20px auto 30px;
 }
 
+.personalpage h2,
+.personalpage p {
+    text-align: center;
+}
+
+.personalpage p {
+    max-width: 900px;
+    margin: 20px auto 30px;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    border: 0;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 24px;
+    text-align: center;
+    opacity: 0.85;
+}
 
 @media (max-width: 768px) {
-    .homecontent {
-        grid-template-columns: 1fr;
-    }
-    
     nav a {
         display: block;
-        text-align: center;
-        margin: 5px 0;
+        margin: 8px 0;
     }
-    
+
     h1 { font-size: 2em; }
     h2 { font-size: 1.5em; }
     p { font-size: 1em; }
@@ -133,67 +197,8 @@ img.responsiveimg {
     section, main {
         padding: 20px 15px;
     }
-    
+
     h1 { font-size: 1.8em; }
     h2 { font-size: 1.3em; }
 }
-
-h1, h2, h3, h4 {
-  font-family: "Poppins", Arial, sans-serif;
-}
-
-.homecontent{
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;     
-  align-items: stretch;
-}
-
-.aboutsection,
-.techsection{
-  flex: 1 1 320px;      
-}
-
-section{
-  padding-bottom: 40px;
-}
-
-.homecontent{
-  margin-bottom: 40px;
-}
-
-footer{
-  margin-top: 40px;
-  padding: 24px;
-  text-align: center;
-  opacity: 0.85;
-}
-
-.video-wrapper{
-  display: flex;
-  justify-content: center;   
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-.video-container{
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.video-container iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 
