@@ -13,12 +13,29 @@
 
 
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", function () {
+      links.classList.toggle("show");
+    });
+  });
+</script>
 <body>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="Projects.html">Projects</a>
-        <a href="personal.html">About Me</a>
+    <nav class="navbar">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰ Menu
+        </button>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="Projects.html">Projects</a>
+            <a href="personal.html">About Me</a>
+        </div>
     </nav>
+
     <header><img src="../images/HeaderPicture.png" alt="Pictue of Mathew Quintero with text saying Data Science and Information Technology" class="responsiveimg"></header>
     <section id="home">
     <div class="homecontent">

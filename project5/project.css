@@ -202,3 +202,40 @@ footer {
     h2 { font-size: 1.3em; }
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 2px solid #efede7;
+  color: #efede7;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
