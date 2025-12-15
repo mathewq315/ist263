@@ -13,16 +13,6 @@
 
 
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const links = document.querySelector(".nav-links");
-
-    toggle.addEventListener("click", function () {
-      links.classList.toggle("show");
-    });
-  });
-</script>
 <body>
     <nav class="navbar">
         <button class="menu-toggle" aria-label="Toggle navigation">
@@ -62,6 +52,18 @@
         </div>
     </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const links = document.querySelector(".nav-links");
+
+    if (!toggle || !links) return;
+
+    toggle.addEventListener("click", function () {
+      links.classList.toggle("show");
+    });
+  });
+</script>
 </body>
 <footer style="color: white">
   <p>&copy; 2025 Mathew Quintero</p>
